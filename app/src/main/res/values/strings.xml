@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">TaskBall</string>
     <string name="action_settings">Settings</string>
+    <string name="action_start">start</string>
+    <string name="author">jin li</string>
+    <string name="action_tips">Tips</string>
+    <string name="string_tips">1. Click + to add \n2. Long click to delete
+    </string>
 </resources>

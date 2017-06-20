@@ -49,15 +49,19 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
-        //add on click listener
+        //add onclick listener
         adapter.setOnItemClickListner(new SimplerAdapter.OnItemClickListner() {
             @Override
             public void onItemClick(View view, int pos) {
-                Toast.makeText(MainActivity.this,"click:"+pos,Toast.LENGTH_SHORT).show();
+                if (Const.DEBUG) {
+                    Toast.makeText(MainActivity.this, "click:" + pos, Toast.LENGTH_SHORT).show();
+                }
             }
             @Override
             public void onItemLongClick(View view, int pos) {
-                Toast.makeText(MainActivity.this,"long click:"+pos,Toast.LENGTH_SHORT).show();
+                if (Const.DEBUG) {
+                    Toast.makeText(MainActivity.this, "long click:" + pos, Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -78,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
+        // Inflate the menu; add items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
@@ -151,5 +155,4 @@ public class MainActivity extends AppCompatActivity {
         startService(intent);
         finish();
     }
-
 }

@@ -2,8 +2,21 @@
       xmlns:app="http://schemas.android.com/apk/res-auto"
       xmlns:tools="http://schemas.android.com/tools"
       tools:context="io.homtingli.github.taskball.MainActivity">
-    <item android:id="@+id/action_settings"
-          android:title="@string/action_settings"
+
+    <item android:id="@+id/action_start"
+          android:title="@string/action_start"
           android:orderInCategory="100"
-          app:showAsAction="never"/>
+          app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_tips"
+          android:title="@string/action_tips"
+          android:orderInCategory="100"
+          app:showAsAction="never" />
+
+    <item
+            android:id="@+id/action_author"
+            android:orderInCategory="100"
+            android:title="Author"
+            app:showAsAction="never"/>
+
 </menu>

@@ -22,6 +22,49 @@
 
     </android.support.design.widget.AppBarLayout>
 
+    <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:paddingTop="16dp">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+        >
+            <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view1"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    app:lottie_fileName="T.json"
+                    app:lottie_loop="true"
+                    app:lottie_autoPlay="true" />
+            <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view2"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    app:lottie_fileName="A.json"
+                    app:lottie_loop="true"
+                    app:lottie_autoPlay="true" />
+            <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view3"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    app:lottie_fileName="S.json"
+                    app:lottie_loop="true"
+                    app:lottie_autoPlay="true" />
+            <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view4"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    app:lottie_fileName="K.json"
+                    app:lottie_loop="true"
+                    app:lottie_autoPlay="true" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
     <include layout="@layout/content_main"/>
 
     <android.support.design.widget.FloatingActionButton
@@ -30,6 +73,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_margin="@dimen/fab_margin"
-            app:srcCompat="@android:drawable/ic_dialog_email"/>
+            app:srcCompat="@android:drawable/ic_menu_add"/>
 
 </android.support.design.widget.CoordinatorLayout>

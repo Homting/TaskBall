@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#7d101010"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/l2"
+    >
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:textColor="#FCFCFC"
+            android:textSize="5pt"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+        />
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:cacheColorHint ="#00000000"
+        >
+
+        </ListView>
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/l1"
+            android:orientation="vertical"
+            android:background="#503097fe"
+            android:layout_above="@id/l2"
+    >
+        <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:id="@+id/reset" android:layout_gravity="top|center_horizontal|right"/>
+    </LinearLayout>
+</RelativeLayout>
+
