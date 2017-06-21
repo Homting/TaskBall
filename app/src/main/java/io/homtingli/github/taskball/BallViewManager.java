@@ -110,8 +110,8 @@ public class BallViewManager {
         params = new WindowManager.LayoutParams(
                 circleView.getCircleWidth(),
                 circleView.getCircleHeight(),
-                //WindowManager.LayoutParams.TYPE_SYSTEM_ALERT,
-                WindowManager.LayoutParams.TYPE_TOAST,
+                WindowManager.LayoutParams.TYPE_SYSTEM_ALERT,
+                //WindowManager.LayoutParams.TYPE_TOAST,
                 WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE
                         | WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL,
                 PixelFormat.TRANSPARENT

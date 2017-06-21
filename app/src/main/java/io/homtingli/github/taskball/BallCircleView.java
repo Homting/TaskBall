@@ -55,16 +55,8 @@ public class BallCircleView extends View {
         textPaint.setAntiAlias(true);
         textPaint.setFakeBoldText(true);
 
-        //progressPaint = new Paint();
-        //progressPaint.setAntiAlias(true);
-        //progressPaint.setColor(Color.argb(0xff,0x4e,0xc9,0x63));
-        //progressPaint.setColor(Color.BLUE);
-        //progressPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
-
-        Bitmap src = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher);
+        Bitmap src = BitmapFactory.decodeResource(getResources(), R.mipmap.task);
         bitmap = Bitmap.createScaledBitmap(src,width,height,true);
-
-        //bitmap = Bitmap.createBitmap(width,height, Bitmap.Config.ARGB_8888);
     }
 
     @Override
@@ -84,8 +76,6 @@ public class BallCircleView extends View {
     protected void onDraw(Canvas canvas) {
 
         if(drag) {
-            //canvas.drawBitmap(bitmap,0,0,null);
-            //canvas.drawCircle(width / 2, height / 2, width / 2, circlePaint);
             canvas.drawBitmap(bitmap,0,0,null);
         } else {
             String text;
