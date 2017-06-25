@@ -42,14 +42,14 @@
                     app:lottie_autoPlay="true" />
             <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/animation_view2"
-                    android:layout_width="40dp"
+                    android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     app:lottie_fileName="A.json"
                     app:lottie_loop="true"
                     app:lottie_autoPlay="true" />
             <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/animation_view3"
-                    android:layout_width="40dp"
+                    android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     app:lottie_fileName="S.json"
                     app:lottie_loop="true"
@@ -62,7 +62,6 @@
                     app:lottie_loop="true"
                     app:lottie_autoPlay="true" />
         </LinearLayout>
-
     </RelativeLayout>
 
     <include layout="@layout/content_main"/>
@@ -74,5 +73,4 @@
             android:layout_gravity="bottom|end"
             android:layout_margin="@dimen/fab_margin"
             app:srcCompat="@android:drawable/ic_menu_add"/>
-
 </android.support.design.widget.CoordinatorLayout>
